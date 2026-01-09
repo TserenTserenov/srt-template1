@@ -11,8 +11,8 @@ target_audience: [ai-agents, administrators, contributors]
 related:
   - roles.md
   - standards.md
-  - "../0.1. Логика хранилища и знаний/principles.md"
-  - "../0.1. Логика хранилища и знаний/document-families.md"
+  - "../0.1. Knowledge-Base-Logic/principles.md"
+  - "../0.1. Knowledge-Base-Logic/document-families.md"
 fpf_principles:
   - systemic-thinking
   - srt-structure
@@ -59,7 +59,7 @@ fpf_patterns:
 Planora → Приложение → Создатель ORA → ORA → Впечатлённый человек → Среда
 ```
 
-> **Терминология:** См. [glossary.md](../0.1.%20Логика%20хранилища%20и%20знаний/glossary.md) для определений всех систем.
+> **Терминология:** См. [glossary.md](../0.1.%20Knowledge-Base-Logic/glossary.md) для определений всех систем.
 
 ## Верхнеуровневая структура
 
@@ -74,8 +74,8 @@ srt-template1/
 │   └── FPF-Readme.md            # Обзор FPF
 │
 ├── Repository-management/       # F19 — метасистема хранилища
-│   ├── 0.1. Логика хранилища и знаний/
-│   ├── 0.2. Процессы работы с хранилищем/
+│   ├── 0.1. Knowledge-Base-Logic/
+│   ├── 0.2. Repository-Processes/
 │   └── ...
 │
 └── Company-Content/             # Контент по методу SRT
@@ -149,14 +149,14 @@ Company-Content/
 Repository-management/
 ├── README.md                              # О разделе Management
 │
-├── 0.1. Логика хранилища и знаний/        # Онтология
+├── 0.1. Knowledge-Base-Logic/             # Онтология
 │   ├── document-families.md               # ⭐ Модель 19 семейств
 │   ├── principles.md                      # Принципы организации
 │   ├── glossary.md                        # Глоссарий (2 части)
 │   ├── taxonomy.md                        # Классификация
 │   └── system-identification.md           # Определение систем
 │
-├── 0.2. Процессы работы с хранилищем/     # Операции и стандарты
+├── 0.2. Repository-Processes/             # Операции и стандарты
 │   ├── structure.md                       # Этот документ
 │   ├── standards.md                       # Стандарты оформления
 │   ├── roles.md                           # Роли и ответственность
@@ -164,10 +164,10 @@ Repository-management/
 │   ├── workflows.md                       # Процессы работы
 │   └── frontmatter-spec.md                # Спецификация метаданных
 │
-├── 0.3. Планы и совещания/                # Координация
-├── 0.4. Автоматические отчёты ИИ/         # Автоматизация
-├── 0.9. Входящие/                         # Inbox
-└── 0.99. Архив/                           # История
+├── 0.3. Plans-and-Meetings/               # Координация
+├── 0.4. AI-Reports/                       # Автоматизация
+├── 0.9. Inbox/                            # Inbox
+└── 0.99. Archive/                         # История
 ```
 
 > **Примечание:** F19 (Repository-management) не делится по ролям Предприниматель/Инженер/Менеджер, а организован по функциональным областям.
@@ -194,7 +194,7 @@ Repository-management/
 ### Примеры путей
 
 ```
-Repository-management/0.1. Логика хранилища и знаний/glossary.md
+Repository-management/0.1. Knowledge-Base-Logic/glossary.md
 Company-Content/A.Target/A2.System-of-Interest/A2.2.Инженер/persona-model.md
 Company-Content/B.Product/B2.System-of-Interest/B2.2.Инженер/api-schema.md
 Company-Content/B.Product/B3.Constructor/B3.3.Менеджер/ci-cd-pipeline.md
@@ -256,7 +256,7 @@ Company-Content/B.Product/B3.Constructor/B3.3.Менеджер/ci-cd-pipeline.md
 
 ## Связанные документы
 
-- [Модель семейств документов](../0.1.%20Логика%20хранилища%20и%20знаний/document-families.md)
-- [Глоссарий](../0.1.%20Логика%20хранилища%20и%20знаний/glossary.md)
+- [Модель семейств документов](../0.1.%20Knowledge-Base-Logic/document-families.md)
+- [Глоссарий](../0.1.%20Knowledge-Base-Logic/glossary.md)
 - [Роли и ответственность](roles.md)
 - [Стандарты оформления](standards.md)

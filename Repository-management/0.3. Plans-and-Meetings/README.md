@@ -1,6 +1,6 @@
 ---
 system: "Management"
-title: "Планы и совещания"
+title: "Plans-and-Meetings"
 date: "2026-01-08"
 tags: [management, plans, meetings, coordination]
 status: "active"
@@ -11,7 +11,7 @@ fpf_principles:
   - practicality
 ---
 
-# 0.3. Планы и совещания
+# 0.3. Plans-and-Meetings
 
 ## Назначение раздела
 

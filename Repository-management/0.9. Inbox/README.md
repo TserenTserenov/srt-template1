@@ -1,19 +1,19 @@
 ---
 system: "Management"
-title: "Входящие"
+title: "Inbox"
 date: "2026-01-08"
 tags: [management, inbox, incoming, triage]
 status: "active"
 related:
   - ../README.md
-  - "../0.99. Архив/README.md"
+  - "../0.99. Archive/README.md"
 fpf_principles:
   - practicality
 fpf_patterns:
   - A.4      # Open-Ended Evolution
 ---
 
-# 0.9. Входящие
+# 0.9. Inbox
 
 ## Назначение раздела
 
@@ -96,4 +96,4 @@ target_family: "?"        # Предполагаемое семейство F1-F
 ## Связанные документы
 
 - [Раздел Management](../README.md)
-- [Архив](../0.99.%20Архив/README.md)
+- [Archive](../0.99.%20Archive/README.md)
