@@ -100,9 +100,18 @@ SRT организует знания через **таблицу 3×3** (9 се
 | Система | Путь | Фокус |
 |---------|------|-------|
 | Management | `Repository-management/` | Метасистема хранилища |
-| Suprasystem | `Company-Content/1.Suprasystem/` | Внешняя среда (надсистема) |
-| System-of-Interest | `Company-Content/2.System-of-Interest/` | Создаваемый продукт (целевая система) |
-| Constructor | `Company-Content/3.Constructor/` | Система создания |
+| A.Target | `Systems-Description/A.Target/` | Ядро A: Впечатлённый человек |
+| B.Product | `Systems-Description/B.Product/` | Ядро B: Приложение |
+
+**Подпапки ядра A:**
+- `A1.Suprasystem-Human-Environment/` — Среда человека
+- `A2.System-of-Interest-Impressed-Human/` — Впечатлённый человек
+- `A3.Constructor-ORA/` — ORA (ивент-продукт)
+
+**Подпапки ядра B:**
+- `B1.Suprasystem-ORA-Creator/` — Создатель ORA
+- `B2.Target-system-App/` — Приложение
+- `B3.Constructor-Planora/` — Planora
 
 ### Роли (измерения)
 
@@ -210,13 +219,14 @@ fpf_patterns:                    # Ссылки на паттерны FPF
 ### Размещение документа
 
 ```
-Company-Content/{N}.{System}/{N}.{M}.{Role}/document-name.md
+Systems-Description/{Ядро}/{Система}/document-name.md
 ```
 
 Примеры:
 - `Repository-management/0.1. Knowledge-Base-Logic/principles.md`
-- `Company-Content/2.System-of-Interest/2.2.Architecture/api-schema.md`
-- `Company-Content/3.Constructor/3.3.Operations/ci-cd-pipeline.md`
+- `Systems-Description/A.Target/A2.System-of-Interest-Impressed-Human/persona.md`
+- `Systems-Description/B.Product/B2.Target-system-App/api-schema.md`
+- `Systems-Description/B.Product/B3.Constructor-Planora/ci-cd-pipeline.md`
 
 ## Принципы работы Claude
 

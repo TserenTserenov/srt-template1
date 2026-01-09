@@ -40,7 +40,7 @@ Planora → Приложение → Создатель ORA → ORA → Впеч
 ## Структура хранилища
 
 ```
-srt-template1/
+Planora/
 ├── README.md                        # Этот файл
 ├── CLAUDE.md                        # Инструкции для AI-агентов
 │
@@ -56,9 +56,15 @@ srt-template1/
 │   ├── 0.4. AI-Reports/
 │   └── ...
 │
-└── Company-Content/                 # Контент по методу SRT
+└── Systems-Description/             # Описания систем по методу SRT
     ├── A.Target/                    # Ядро A: 9 семейств
+    │   ├── A1.Suprasystem-Human-Environment/
+    │   ├── A2.System-of-Interest-Impressed-Human/
+    │   └── A3.Constructor-ORA/
     └── B.Product/                   # Ядро B: 9 семейств
+        ├── B1.Suprasystem-ORA-Creator/
+        ├── B2.Target-system-App/
+        └── B3.Constructor-Planora/
 ```
 
 ## Определения систем
@@ -126,8 +132,8 @@ srt-template1/
 1. Изучите [определения систем](Repository-management/0.1.%20Knowledge-Base-Logic/system-identification.md)
 2. Прочитайте [глоссарий](Repository-management/0.1.%20Knowledge-Base-Logic/glossary.md)
 3. Начните с ядра, релевантного вашей роли:
-   - **ORA-студия** → [Ядро A (Target)](Company-Content/A.Target/)
-   - **ИТ-служба** → [Ядро B (Product)](Company-Content/B.Product/)
+   - **ORA-студия** → [Ядро A (Target)](Systems-Description/A.Target/)
+   - **ИТ-служба** → [Ядро B (Product)](Systems-Description/B.Product/)
 
 ## Ссылки
 
