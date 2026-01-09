@@ -116,7 +116,7 @@ SRT организует знания через **таблицу 3×3** (9 се
 
 > **КРИТИЧЕСКИ ВАЖНО:** Создание любого документа хранилища происходит **обязательно** на основании документов из папки `Repository-management/`, а не только по FPF.
 >
-> **Логика хранилища и терминология:** Claude Code **обязан** перед любой работой с документами ознакомиться с логикой хранилища (`Repository-management/0.1. Логика хранилища и знаний/`) и использовать терминологию из глоссария (`glossary.md`). Несоблюдение терминологии и структуры — критическая ошибка.
+> **Логика хранилища и терминология:** Claude Code **обязан** перед любой работой с документами ознакомиться с логикой хранилища (`Repository-management/0.1. Knowledge-Base-Logic/`) и использовать терминологию из глоссария (`glossary.md`). Несоблюдение терминологии и структуры — критическая ошибка.
 
 ### Источники истины для создания документов
 
@@ -124,22 +124,22 @@ SRT организует знания через **таблицу 3×3** (9 се
 
 | Задача | Обязательные источники из 0.Management/ |
 |--------|----------------------------------------|
-| **Создание документа** | `0.1. Логика хранилища и знаний/document-families.md`, `0.2. Процессы работы с хранилищем/standards.md` |
-| **Определение места** | `0.1. Логика хранилища и знаний/document-families.md` — модель семейств F0-F9 |
-| **Оформление frontmatter** | `0.2. Процессы работы с хранилищем/standards.md`, `0.2. Процессы работы с хранилищем/frontmatter-spec.md` |
-| **Терминология** | `0.1. Логика хранилища и знаний/glossary.md` |
-| **Связи документов** | `0.1. Логика хранилища и знаний/principles.md` |
-| **Процесс создания** | `0.2. Процессы работы с хранилищем/document-creation.md` |
+| **Создание документа** | `0.1. Knowledge-Base-Logic/document-families.md`, `0.2. Repository-Processes/standards.md` |
+| **Определение места** | `0.1. Knowledge-Base-Logic/document-families.md` — модель семейств F0-F9 |
+| **Оформление frontmatter** | `0.2. Repository-Processes/standards.md`, `0.2. Repository-Processes/frontmatter-spec.md` |
+| **Терминология** | `0.1. Knowledge-Base-Logic/glossary.md` |
+| **Связи документов** | `0.1. Knowledge-Base-Logic/principles.md` |
+| **Процесс создания** | `0.2. Repository-Processes/document-creation.md` |
 
 ### Механизм работы Claude с 0.Management/
 
 **Алгоритм перед созданием документа:**
 
-1. **Прочитай** `0.1. Логика хранилища и знаний/document-families.md` — определи семейство (F0-F9)
-2. **Прочитай** `0.2. Процессы работы с хранилищем/standards.md` — получи стандарты оформления
-3. **Прочитай** `0.1. Логика хранилища и знаний/glossary.md` — используй правильную терминологию
+1. **Прочитай** `0.1. Knowledge-Base-Logic/document-families.md` — определи семейство (F0-F9)
+2. **Прочитай** `0.2. Repository-Processes/standards.md` — получи стандарты оформления
+3. **Прочитай** `0.1. Knowledge-Base-Logic/glossary.md` — используй правильную терминологию
 4. **Создай** документ с правильным frontmatter и в правильной папке
-5. **Проверь** по `0.2. Процессы работы с хранилищем/frontmatter-spec.md`
+5. **Проверь** по `0.2. Repository-Processes/frontmatter-spec.md`
 
 ### Структура 0.Management/ (F0)
 
@@ -147,22 +147,22 @@ SRT организует знания через **таблицу 3×3** (9 се
 
 ```
 Repository-management/
-├── 0.1. Логика хранилища и знаний/    # Онтология
+├── 0.1. Knowledge-Base-Logic/         # Онтология
 │   ├── document-families.md           # ⭐ Модель семейств F0-F9
 │   ├── principles.md                  # Принципы организации
 │   ├── glossary.md                    # Глоссарий терминов
 │   └── taxonomy.md                    # Классификация
-├── 0.2. Процессы работы с хранилищем/ # Операции и стандарты
+├── 0.2. Repository-Processes/         # Операции и стандарты
 │   ├── structure.md                   # Структура папок
 │   ├── standards.md                   # ⭐ Стандарты оформления
 │   ├── roles.md                       # Роли и ответственность
 │   ├── document-creation.md           # ⭐ Создание документов
 │   ├── workflows.md                   # Рабочие процессы
 │   └── frontmatter-spec.md            # ⭐ Спецификация frontmatter
-├── 0.3. Планы и совещания/            # Координация
-├── 0.4. Автоматические отчёты ИИ/     # Автоотчёты AI
-├── 0.9. Входящие/                     # Входящие идеи
-└── 0.99. Архив/                       # Архив
+├── 0.3. Plans-and-Meetings/           # Координация
+├── 0.4. AI-Reports/                   # Автоотчёты AI
+├── 0.9. Inbox/                        # Входящие идеи
+└── 0.99. Archive/                     # Архив
 ```
 
 ### Команда для автозагрузки контекста
@@ -171,12 +171,12 @@ Repository-management/
 
 ```
 # Минимальный контекст (обязательно)
-Read: Repository-management/0.1. Логика хранилища и знаний/document-families.md
-Read: Repository-management/0.2. Процессы работы с хранилищем/standards.md
+Read: Repository-management/0.1. Knowledge-Base-Logic/document-families.md
+Read: Repository-management/0.2. Repository-Processes/standards.md
 
 # Расширенный контекст (по необходимости)
-Read: Repository-management/0.1. Логика хранилища и знаний/glossary.md
-Read: Repository-management/0.2. Процессы работы с хранилищем/document-creation.md
+Read: Repository-management/0.1. Knowledge-Base-Logic/glossary.md
+Read: Repository-management/0.2. Repository-Processes/document-creation.md
 ```
 
 ---
@@ -214,7 +214,7 @@ Company-Content/{N}.{System}/{N}.{M}.{Role}/document-name.md
 ```
 
 Примеры:
-- `Repository-management/0.1. Логика хранилища и знаний/principles.md`
+- `Repository-management/0.1. Knowledge-Base-Logic/principles.md`
 - `Company-Content/2.System-of-Interest/2.2.Architecture/api-schema.md`
 - `Company-Content/3.Constructor/3.3.Operations/ci-cd-pipeline.md`
 
@@ -324,13 +324,13 @@ Company-Content/{N}.{System}/{N}.{M}.{Role}/document-name.md
 
 ### Главные документы
 - [README.md](README.md) — описание SRT-метода
-- [Модель семейств документов](Repository-management/0.1.%20Логика%20хранилища%20и%20знаний/document-families.md) — F0-F9
+- [Модель семейств документов](Repository-management/0.1.%20Knowledge-Base-Logic/document-families.md) — F0-F9
 
 ### Repository-management/ (F0)
-- [Принципы](Repository-management/0.1.%20Логика%20хранилища%20и%20знаний/principles.md)
-- [Глоссарий](Repository-management/0.1.%20Логика%20хранилища%20и%20знаний/glossary.md)
-- [Стандарты](Repository-management/0.2.%20Процессы%20работы%20с%20хранилищем/standards.md)
-- [Создание документов](Repository-management/0.2.%20Процессы%20работы%20с%20хранилищем/document-creation.md)
+- [Принципы](Repository-management/0.1.%20Knowledge-Base-Logic/principles.md)
+- [Глоссарий](Repository-management/0.1.%20Knowledge-Base-Logic/glossary.md)
+- [Стандарты](Repository-management/0.2.%20Repository-Processes/standards.md)
+- [Создание документов](Repository-management/0.2.%20Repository-Processes/document-creation.md)
 
 ### FPF
 - [.fpf/INDEX.md](.fpf/INDEX.md) — локальные принципы проекта

@@ -1,19 +1,19 @@
 ---
 system: "Management"
-title: "Логика хранилища и знаний"
+title: "Knowledge-Base-Logic"
 date: "2026-01-08"
 tags: [management, logic, principles, glossary, families]
 status: "active"
 related:
   - ../README.md
-  - "../0.2. Процессы работы с хранилищем/README.md"
+  - "../0.2. Repository-Processes/README.md"
 fpf_principles:
   - minimalism
   - clarity
   - systemic-thinking
 ---
 
-# 0.1. Логика хранилища и знаний
+# 0.1. Knowledge-Base-Logic
 
 ## Назначение раздела
 
@@ -46,4 +46,4 @@ fpf_principles:
 ## Связанные документы
 
 - [Раздел Management](../README.md)
-- [Процессы работы с хранилищем](../0.2.%20Процессы%20работы%20с%20хранилищем/README.md)
+- [Repository-Processes](../0.2.%20Repository-Processes/README.md)
