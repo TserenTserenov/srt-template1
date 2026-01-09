@@ -99,10 +99,10 @@ SRT организует знания через **таблицу 3×3** (9 се
 
 | Система | Путь | Фокус |
 |---------|------|-------|
-| Management | `.fpf/0.Management/` | Метасистема хранилища |
-| Suprasystem | `content/1.Suprasystem/` | Внешняя среда (надсистема) |
-| System-of-Interest | `content/2.System-of-Interest/` | Создаваемый продукт (целевая система) |
-| Constructor | `content/3.Constructor/` | Система создания |
+| Management | `Repository-management/` | Метасистема хранилища |
+| Suprasystem | `Company-Content/1.Suprasystem/` | Внешняя среда (надсистема) |
+| System-of-Interest | `Company-Content/2.System-of-Interest/` | Создаваемый продукт (целевая система) |
+| Constructor | `Company-Content/3.Constructor/` | Система создания |
 
 ### Роли (измерения)
 
@@ -114,7 +114,9 @@ SRT организует знания через **таблицу 3×3** (9 се
 
 ## ОБЯЗАТЕЛЬНО: Работа с 0.Management/
 
-> **КРИТИЧЕСКИ ВАЖНО:** Создание любого документа хранилища происходит **обязательно** на основании документов из папки `.fpf/0.Management/`, а не только по FPF.
+> **КРИТИЧЕСКИ ВАЖНО:** Создание любого документа хранилища происходит **обязательно** на основании документов из папки `Repository-management/`, а не только по FPF.
+>
+> **Логика хранилища и терминология:** Claude Code **обязан** перед любой работой с документами ознакомиться с логикой хранилища (`Repository-management/0.1. Логика хранилища и знаний/`) и использовать терминологию из глоссария (`glossary.md`). Несоблюдение терминологии и структуры — критическая ошибка.
 
 ### Источники истины для создания документов
 
@@ -144,7 +146,7 @@ SRT организует знания через **таблицу 3×3** (9 се
 > **Важно:** F0 (Management) не делится по ролям Предприниматель/Инженер/Менеджер, а организован по функциональным областям.
 
 ```
-.fpf/0.Management/
+Repository-management/
 ├── 0.1. Логика хранилища и знаний/    # Онтология
 │   ├── document-families.md           # ⭐ Модель семейств F0-F9
 │   ├── principles.md                  # Принципы организации
@@ -169,12 +171,12 @@ SRT организует знания через **таблицу 3×3** (9 се
 
 ```
 # Минимальный контекст (обязательно)
-Read: .fpf/0.Management/0.1. Логика хранилища и знаний/document-families.md
-Read: .fpf/0.Management/0.2. Процессы работы с хранилищем/standards.md
+Read: Repository-management/0.1. Логика хранилища и знаний/document-families.md
+Read: Repository-management/0.2. Процессы работы с хранилищем/standards.md
 
 # Расширенный контекст (по необходимости)
-Read: .fpf/0.Management/0.1. Логика хранилища и знаний/glossary.md
-Read: .fpf/0.Management/0.2. Процессы работы с хранилищем/document-creation.md
+Read: Repository-management/0.1. Логика хранилища и знаний/glossary.md
+Read: Repository-management/0.2. Процессы работы с хранилищем/document-creation.md
 ```
 
 ---
@@ -208,13 +210,13 @@ fpf_patterns:                    # Ссылки на паттерны FPF
 ### Размещение документа
 
 ```
-content/{N}.{System}/{N}.{M}.{Role}/document-name.md
+Company-Content/{N}.{System}/{N}.{M}.{Role}/document-name.md
 ```
 
 Примеры:
-- `.fpf/0.Management/0.1. Логика хранилища и знаний/principles.md`
-- `content/2.System-of-Interest/2.2.Architecture/api-schema.md`
-- `content/3.Constructor/3.3.Operations/ci-cd-pipeline.md`
+- `Repository-management/0.1. Логика хранилища и знаний/principles.md`
+- `Company-Content/2.System-of-Interest/2.2.Architecture/api-schema.md`
+- `Company-Content/3.Constructor/3.3.Operations/ci-cd-pipeline.md`
 
 ## Принципы работы Claude
 
@@ -322,13 +324,13 @@ content/{N}.{System}/{N}.{M}.{Role}/document-name.md
 
 ### Главные документы
 - [README.md](README.md) — описание SRT-метода
-- [Модель семейств документов](.fpf/0.Management/0.1.%20Логика%20хранилища%20и%20знаний/document-families.md) — F0-F9
+- [Модель семейств документов](Repository-management/0.1.%20Логика%20хранилища%20и%20знаний/document-families.md) — F0-F9
 
-### 0.Management/ (F0)
-- [Принципы](.fpf/0.Management/0.1.%20Логика%20хранилища%20и%20знаний/principles.md)
-- [Глоссарий](.fpf/0.Management/0.1.%20Логика%20хранилища%20и%20знаний/glossary.md)
-- [Стандарты](.fpf/0.Management/0.2.%20Процессы%20работы%20с%20хранилищем/standards.md)
-- [Создание документов](.fpf/0.Management/0.2.%20Процессы%20работы%20с%20хранилищем/document-creation.md)
+### Repository-management/ (F0)
+- [Принципы](Repository-management/0.1.%20Логика%20хранилища%20и%20знаний/principles.md)
+- [Глоссарий](Repository-management/0.1.%20Логика%20хранилища%20и%20знаний/glossary.md)
+- [Стандарты](Repository-management/0.2.%20Процессы%20работы%20с%20хранилищем/standards.md)
+- [Создание документов](Repository-management/0.2.%20Процессы%20работы%20с%20хранилищем/document-creation.md)
 
 ### FPF
 - [.fpf/INDEX.md](.fpf/INDEX.md) — локальные принципы проекта
