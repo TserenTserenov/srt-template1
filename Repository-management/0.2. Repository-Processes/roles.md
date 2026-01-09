@@ -155,7 +155,7 @@ Admin#Administrator:Management
 
 **Лари Церенов:**
 - `A.Target/` — полное ядро A (Впечатлённый человек, Среда, ORA)
-- `B.Product/B1.Suprasystem-ORA-Creator/` — Создатель ORA как надсистема
+- `B.Product/B1.Suprasystem-ORA-Organization/` — Организатор ORA как надсистема
 
 **Андрей Иванов:**
 - `B.Product/B2.Target-system-App/` — Приложение (целевая система B)
