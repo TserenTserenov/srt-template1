@@ -1,12 +1,12 @@
 ---
 system: "Management"
-title: "Процессы работы с хранилищем"
+title: "Repository-Processes"
 date: "2026-01-08"
 tags: [management, processes, workflows, standards]
 status: "active"
 related:
   - ../README.md
-  - "../0.1. Логика хранилища и знаний/README.md"
+  - "../0.1. Knowledge-Base-Logic/README.md"
 fpf_principles:
   - minimalism
   - practicality
@@ -14,7 +14,7 @@ fpf_patterns:
   - B.4      # Canonical Evolution
 ---
 
-# 0.2. Процессы работы с хранилищем
+# 0.2. Repository-Processes
 
 ## Назначение раздела
 
@@ -66,4 +66,4 @@ fpf_patterns:
 ## Связанные документы
 
 - [Раздел Management](../README.md)
-- [Логика хранилища и знаний](../0.1.%20Логика%20хранилища%20и%20знаний/README.md)
+- [Knowledge-Base-Logic](../0.1.%20Knowledge-Base-Logic/README.md)

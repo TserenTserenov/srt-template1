@@ -50,10 +50,10 @@ srt-template1/
 │   └── FPF-Readme.md
 │
 ├── Repository-management/           # F19 — метасистема хранилища
-│   ├── 0.1. Логика хранилища и знаний/
-│   ├── 0.2. Процессы работы с хранилищем/
-│   ├── 0.3. Планы и совещания/
-│   ├── 0.4. Автоматические отчёты ИИ/
+│   ├── 0.1. Knowledge-Base-Logic/
+│   ├── 0.2. Repository-Processes/
+│   ├── 0.3. Plans-and-Meetings/
+│   ├── 0.4. AI-Reports/
 │   └── ...
 │
 └── Company-Content/                 # Контент по методу SRT
@@ -123,8 +123,8 @@ srt-template1/
 
 ## Быстрый старт
 
-1. Изучите [определения систем](Repository-management/0.1.%20Логика%20хранилища%20и%20знаний/system-identification.md)
-2. Прочитайте [глоссарий](Repository-management/0.1.%20Логика%20хранилища%20и%20знаний/glossary.md)
+1. Изучите [определения систем](Repository-management/0.1.%20Knowledge-Base-Logic/system-identification.md)
+2. Прочитайте [глоссарий](Repository-management/0.1.%20Knowledge-Base-Logic/glossary.md)
 3. Начните с ядра, релевантного вашей роли:
    - **ORA-студия** → [Ядро A (Target)](Company-Content/A.Target/)
    - **ИТ-служба** → [Ядро B (Product)](Company-Content/B.Product/)
@@ -133,4 +133,4 @@ srt-template1/
 
 - [CLAUDE.md](CLAUDE.md) — инструкции для AI-агентов
 - [Repository-management](Repository-management/) — управление хранилищем (F19)
-- [Модель семейств документов](Repository-management/0.1.%20Логика%20хранилища%20и%20знаний/document-families.md)
+- [Модель семейств документов](Repository-management/0.1.%20Knowledge-Base-Logic/document-families.md)

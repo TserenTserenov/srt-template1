@@ -1,19 +1,19 @@
 ---
 system: "Management"
-title: "Архив"
+title: "Archive"
 date: "2026-01-08"
 tags: [management, archive, history]
 status: "active"
 related:
   - ../README.md
-  - "../0.9. Входящие/README.md"
+  - "../0.9. Inbox/README.md"
 fpf_principles:
   - incremental-improvement
 fpf_patterns:
   - A.4      # Open-Ended Evolution
 ---
 
-# 0.99. Архив
+# 0.99. Archive
 
 ## Назначение раздела
 
@@ -40,7 +40,7 @@ fpf_patterns:
 ### Структура архива
 
 ```
-0.99. Архив/
+0.99. Archive/
 ├── README.md
 ├── 2026-01/                    # По месяцам
 │   ├── old-requirements.md
@@ -98,4 +98,4 @@ system: "Management"
 ## Связанные документы
 
 - [Раздел Management](../README.md)
-- [Входящие](../0.9.%20Входящие/README.md)
+- [Inbox](../0.9.%20Inbox/README.md)
