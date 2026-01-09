@@ -109,7 +109,7 @@ SRT организует знания через **таблицу 3×3** (9 се
 - `A3.Constructor-ORA/` — ORA (ивент-продукт)
 
 **Подпапки ядра B:**
-- `B1.Suprasystem-ORA-Creator/` — Создатель ORA
+- `B1.Suprasystem-ORA-Organization/` — Организатор ORA
 - `B2.Target-system-App/` — Приложение
 - `B3.Constructor-Planora/` — Planora
 
